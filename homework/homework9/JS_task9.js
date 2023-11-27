@@ -1,46 +1,10 @@
-// document.addEventListener('DOMContentLoaded', function () {
-    
-// })
-// let tabsTitle = document.querySelectorAll('.tabs-title');
-//     let tabsText = document.querySelectorAll('.tabs-text');
-//     for(elem of tabsTitle) {
-//         elem.addEventListener('click', el => {
-//             el.preventDefault();
-//             const activeTab = document.querySelector(".tabs-title.active");
-//             if (activeTab) {
-//                 activeTab.classList.remove("active");
-//             }
-//             const activeText = document.querySelector(".tabs-text.active");
-//              if (activeText) {
-//                 activeText.classList.remove("active");
-//             }
-            
-            
-//             elem.classList.add('active');
-//             const index = [...elem.parentElement.children].indexOf(elem);
-//             tabsText[index].classList.add("active");
-//         })
-//     }
-let tabsTitle = document.querySelectorAll('.tabs-title');
-    let tabsText = document.querySelectorAll('.tabs-text');
+function switchTab(tabIndex) {
+  const tabs = document.querySelectorAll(".tabs-title");
+  tabs.forEach((tab) => tab.classList.remove("active"));
 
-    for (elem of tabsTitle) {
-        elem.addEventListener('click', el => {
-            el.preventDefault();
+  const tabContents = document.querySelectorAll(".tabs-text");
+  tabContents.forEach((content) => content.classList.remove("active"));
 
-            const activeTab = document.querySelector(".tabs-title.active");
-            if (activeTab) {
-                activeTab.classList.remove("active");
-            }
-
-            const activeText = document.querySelector(".tabs-text.active");
-            if (activeText) {
-                activeText.classList.remove("active");
-            }
-
-            elem.classList.add('active');
-
-            const index = [...elem.parentElement.children].indexOf(elem);
-            tabsText[index].classList.add("active");
-        });
-    }
+  tabs[tabIndex].classList.add("active");
+  tabContents[tabIndex].classList.add("active");
+}
