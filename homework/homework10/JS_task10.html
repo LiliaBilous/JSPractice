@@ -14,65 +14,102 @@
   </head>
   <body>
     <div class="conteiner">
-        <header class="header">
-            <a href="#" class="header_logo">JOURNEY</a>
-            <div class="header_menu">
-                <div class="header_icons">
-                    <a href="#" class="header-icon calendar"></a>
-                    <a href="#" class="header-icon forum"></a>
-                    <a href="#" class="header-icon journey"></a>
-                </div>
-                <div class="header_text">
-                    Welcome, 
-                    <a href="#" class="link">Log In</a> or 
-                    <a href="#" class="link">Sign Up</a> 
-                </div>
-            </div>
-        </header>
-        <div class="form">
-            <div class="form_header">
-                <div class="form_title">Sign Up</div>
-                <a href="#" class="form-link link">Log In</a>
-            </div>
-            <div class="buttuns">
-                <button class="facebook">
-                    <span class="icon">
-                        <img src="img/facebook.png" alt="facebook">
-                        <span class="line">|</span>
-                        Facebook
-                    </span>
-                </button>
-                <button class="google">
-                    <span class="icon">
-                        <img src="img/google.png" alt="google">
-                        <span class="line">|</span>
-                        Google
-                    </span>
-                </button>
-            </div>
-            <div class="form__divider"></div>
-            <form class="password-form" action="#">
-                <input class="field" type="text" name="firstname" placeholder="First name">
-                <input class="field" type="text" name="lastname" placeholder="Last name">
-                <input class="field" type="email" name="email" placeholder="Email">
-                <label class="input-wrapper">
-                    <input class="field" type="password" name="password" placeholder="Choose Password"><i class="fas fa-eye icon-password"></i>                  
-                </label>
-                <label class="input-wrapper">
-                    <input class="field" type="password" name="confirm" placeholder="Confirm Password"><i class="fas fa-eye-slash icon-password"></i>
-                </label>          
-                <!-- <button type="submit" class="btn">Confirm</button>       -->
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" class="check">
-                        Agree our <a href="#" class="terms">Terms & Conditions</a>
-                    </label>
-                </div>
-                <button class="account" type="button">Create Account</button>
-            </form>
+      <header class="header">
+        <a href="#" class="header_logo">JOURNEY</a>
+        <div class="header_menu">
+          <div class="header_icons">
+            <a href="#" class="header-icon calendar"></a>
+            <a href="#" class="header-icon forum"></a>
+            <a href="#" class="header-icon journey"></a>
+          </div>
+          <div class="header_text">
+            Welcome,
+            <a href="#" class="link">Log In</a> or
+            <a href="#" class="link">Sign Up</a>
+          </div>
         </div>
+      </header>
+      <div class="form">
+        <div class="form_header">
+          <div class="form_title">Sign Up</div>
+          <a href="#" class="form-link link">Log In</a>
+        </div>
+        <div class="buttuns">
+          <button class="facebook">
+            <span class="icon">
+              <img src="img/facebook.png" alt="facebook" />
+              <span class="line">|</span>
+              Facebook
+            </span>
+          </button>
+          <button class="google">
+            <span class="icon">
+              <img src="img/google.png" alt="google" />
+              <span class="line">|</span>
+              Google
+            </span>
+          </button>
+        </div>
+        <div class="form__divider"></div>
+        <form
+          class="password-form"
+          action="#"
+          type="POST"
+        >
+          <input
+            class="field"
+            type="text"
+            name="firstname"
+            placeholder="First name"
+          />
+          <input
+            class="field"
+            type="text"
+            name="lastname"
+            placeholder="Last name"
+          />
+          <input
+            class="field"
+            type="email"
+            name="email"
+            autocomplete="off"
+            placeholder="Email"
+          />
+          <label class="input-wrapper">
+            <input
+              id="passwordInput"
+              type="password"
+              name="password"
+              placeholder="Choose Password"
+              autocomplete="off"
+            /><i
+              class="fas fa-eye"
+              id="iconShowPassword"
+            ></i>
+          </label>
+          <label class="input-wrapper">
+            <input
+              id="confirmPasswordInput"
+              type="password"
+              name="confirm"
+              placeholder="Confirm Password"
+              autocomplete="off"
+            /><i
+              class="fas fa-eye-slash"
+              id="iconHidePassword"
+            ></i>
+          </label>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" class="check" name="check" />
+              Agree our <a href="#" class="terms">Terms & Conditions</a>
+            </label>
+          </div>
+          <button class="account" type="submit">Create Account</button>
+        </form>
+      </div>
     </div>
-    
+
     <script src="./JS_task10.js"></script>
   </body>
 </html>
