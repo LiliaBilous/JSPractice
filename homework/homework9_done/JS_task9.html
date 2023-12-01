@@ -9,75 +9,128 @@
   </head>
   <body>
     <header class="header">
-      <ul class="tabs">
+      <div class="logo">
+        <a href="#" class="black">Ra</a><a href="#" class="blue">mda.js</a>
+      </div>
+      <nav class="header-nav">
+        <a href="#">Functional Programming</a>
+        <a href="#">Ramda</a>
+        <a href="#">Fantasy Land Spec</a>
+        <a href="#">Node.js for all</a>
+      </nav>
+    </header>
+    <main class="content">
+      <ul class="side-menu tabs">
         <li class="tabs-title" onclick="switchTab(0)">Akali</li>
         <li class="tabs-title" onclick="switchTab(1)">Anivia</li>
         <li class="tabs-title" onclick="switchTab(2)">Draven</li>
         <li class="tabs-title" onclick="switchTab(3)">Garen</li>
         <li class="tabs-title" onclick="switchTab(4)">Katarina</li>
+        <li class="tabs-title" onclick="switchTab(5)">Ramda</li>
       </ul>
-    </header>
-    <main class="content">
       <ul class="tabs-content">
         <!-- Akali -->
         <li class="tabs-text" data-index="0">
-          Akali <br />
-          Abandoning the Kinkou Order and her title of the Fist of Shadow, Akali
-          now strikes alone, ready to be the deadly weapon her people need.
-          Though she holds onto all she learned from her master Shen, she has
-          pledged to defend Ionia from its enemies, one kill at a time. Akali
-          may strike in silence, but her message will be heard loud and clear:
-          fear the assassin with no maste
+          <span>Akali</span><br />
+          <p class="text-wrapper">
+            Abandoning the Kinkou Order and her title of the Fist of Shadow,
+            Akali now strikes alone, ready to be the deadly weapon her people
+            need. Though she holds onto all she learned from her master Shen,
+            she has pledged to defend Ionia from its enemies, one kill at a
+            time. Akali may strike in silence, but her message will be heard
+            loud and clear: fear the assassin with no maste.
+          </p>
         </li>
         <!-- Anivia -->
         <li class="tabs-text" data-index="1">
-          Anivia <br />
-          Anivia is a benevolent winged spirit who endures endless cycles of
-          life, death, and rebirth to protect the Freljord. A demigod born of
-          unforgiving ice and bitter winds, she wields those elemental powers to
-          thwart any who dare disturb her homeland. Anivia guides and protects
-          the tribes of the harsh north, who revere her as a symbol of hope, and
-          a portent of great change. She fights with every ounce of her being,
-          knowing that through her sacrifice, her memory will endure, and she
-          will be reborn into a new tomorrow.
+          <span>Anivia</span>
+          <p class="text-wrapper">
+            Anivia is a benevolent winged spirit who endures endless cycles of
+            life, death, and rebirth to protect the Freljord. A demigod born of
+            unforgiving ice and bitter winds, she wields those elemental powers
+            to thwart any who dare disturb her homeland. Anivia guides and
+            protects the tribes of the harsh north, who revere her as a symbol
+            of hope, and a portent of great change. She fights with every ounce
+            of her being, knowing that through her sacrifice, her memory will
+            endure, and she will be reborn into a new tomorrow.
+          </p>
         </li>
         <!--Draven -->
         <li class="tabs-text" data-index="2">
-          Draven <br />
-          In Noxus, warriors known as reckoners face one another in arenas where
-          blood is spilled and strength tested—but none has ever been as
-          celebrated as Draven. A former soldier, he found that the crowds
-          uniquely appreciated his flair for the dramatic, not to mention the
-          spray of blood from each of his spinning axes. Addicted to the
-          spectacle of his own brash perfection, Draven has sworn to defeat
-          whomever he must to ensure that his name is chanted throughout the
-          empire forever more.
+          <span>Draven</span>
+          <p class="text-wrapper">
+            In Noxus, warriors known as reckoners face one another in arenas
+            where blood is spilled and strength tested—but none has ever been as
+            celebrated as Draven. A former soldier, he found that the crowds
+            uniquely appreciated his flair for the dramatic, not to mention the
+            spray of blood from each of his spinning axes. Addicted to the
+            spectacle of his own brash perfection, Draven has sworn to defeat
+            whomever he must to ensure that his name is chanted throughout the
+            empire forever more.
+          </p>
         </li>
         <!-- Garen -->
         <li class="tabs-text" data-index="3">
-          Garen <br />
-          A proud and noble soldier, Garen fights at the head of the Dauntless
-          Vanguard. He is popular among his fellows, and respected well enough
-          by his enemies—not least as a scion of the prestigious Crownguard
-          family, entrusted with defending Demacia and its ideals. Clad in
-          magic-resistant armor and bearing a mighty broadsword, Garen stands
-          ready to confront mages and sorcerers on the field of battle, in a
-          veritable whirlwind of righteous steel.
+          <span>Garen</span>
+          <p class="text-wrapper">
+            A proud and noble soldier, Garen fights at the head of the Dauntless
+            Vanguard. He is popular among his fellows, and respected well enough
+            by his enemies—not least as a scion of the prestigious Crownguard
+            family, entrusted with defending Demacia and its ideals. Clad in
+            magic-resistant armor and bearing a mighty broadsword, Garen stands
+            ready to confront mages and sorcerers on the field of battle, in a
+            veritable whirlwind of righteous steel.
+          </p>
         </li>
         <!-- Katarina -->
         <li class="tabs-text" data-index="4">
-          Katarina <br />
-          Decisive in judgment and lethal in combat, Katarina is a Noxian
-          assassin of the highest caliber. Eldest daughter to the legendary
-          General Du Couteau, she made her talents known with swift kills
-          against unsuspecting enemies. Her fiery ambition has driven her to
-          pursue heavily-guarded targets, even at the risk of endangering her
-          allies—but no matter the mission, Katarina will not hesitate to
-          execute her duty amid a whirlwind of serrated daggers.
+          <span>Katarina</span>
+          <p class="text-wrapper">
+            Decisive in judgment and lethal in combat, Katarina is a Noxian
+            assassin of the highest caliber. Eldest daughter to the legendary
+            General Du Couteau, she made her talents known with swift kills
+            against unsuspecting enemies. Her fiery ambition has driven her to
+            pursue heavily-guarded targets, even at the risk of endangering her
+            allies—but no matter the mission, Katarina will not hesitate to
+            execute her duty amid a whirlwind of serrated daggers.
+          </p>
+        </li>
+        <li class="tabs-text active" data-index="5">
+          <img src="./tabs_exsample/main-img.png" alt="main img" />
+          <div class="text-wrapper">
+            <p>
+              Lorem ipsum — классическая панграмма, условный, зачастую
+              бессмысленный текст-заполнитель, вставляемый в макет страницы.
+              Используется в качестве заполнителя по крайней мере с XVI века.
+              Является искажённым отрывком из философского трактата Марка Туллия
+              Цицерона «О пределах добра и зла», написанного в 45 году до н. э.
+              на латинском языке, обнаружение сходства атрибутируется Ричарду
+              МакКлинтоку.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
         </li>
       </ul>
     </main>
-    
+    <footer>
+      <ul class="footer_menu tabs">
+        <li class="tabs-title" onclick="switchTab(0)">Akali</li>
+        <li class="tabs-title" onclick="switchTab(1)">Anivia</li>
+        <li class="tabs-title" onclick="switchTab(2)">Draven</li>
+        <li class="tabs-title" onclick="switchTab(3)">Garen</li>
+        <li class="tabs-title" onclick="switchTab(4)">Katarina</li>
+        <li class="tabs-title" onclick="switchTab(5)">Ramda</li>
+      </ul>
+      <div class="copyright">Copyright &#169; 2018</div>
+    </footer>
     <script src="./JS_task9.js"></script>
   </body>
 </html>
