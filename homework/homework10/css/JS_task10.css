@@ -326,3 +326,6 @@ a.terms {
   padding: 5px;
   cursor: pointer;
 }
+.alert {
+  color: #df4a32;
+}
