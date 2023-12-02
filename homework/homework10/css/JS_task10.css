@@ -185,15 +185,25 @@ button {
 
 button:hover {
   color: #3cb878;
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .facebook {
   background-color: #305db8;
+  border: 1px solid #305db8;
+  
+}
+.facebook:hover {
+  background-color: #568af3;
 }
 
 .google {
   background-color: #df4a32;
+  border: 1px solid #df4a32;
+}
+
+.google:hover {
+  background-color: #ec6d5a;
 }
 
 form {
@@ -243,7 +253,6 @@ label {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-
 }
 
 input[type="checkbox"] {
