@@ -8,9 +8,6 @@
 
 body {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: rgb(30, 18, 4);
     color: white;
 }
@@ -21,15 +18,19 @@ body {
     padding: 3rem;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .images-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
-    width: 90vw;
-    height: 75vh; 
+    width: 50vw;
+    height: 80vh; 
 }
 
 .images-wrapper img {
@@ -38,11 +39,16 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    
 }
 .image-to-show {
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
+    border: 1px solid #81441f;
+    border-radius: 3rem;
+    box-shadow: 15px 17px 21px -5px rgba(118, 62, 17, 0.2);
+    
 }
 .image-to-show.active{
     opacity: 1;
