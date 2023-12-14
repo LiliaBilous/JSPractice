@@ -5,6 +5,11 @@
     border: 0;
 	box-sizing: border-box;
 }
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
 
 body {
     height: 100vh;
@@ -17,7 +22,7 @@ body {
     width: 100%;
     padding: 3rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,8 +34,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    width: 50vw;
-    height: 80vh; 
+    width: 25vw;
+    height: 90vh; 
 }
 
 .images-wrapper img {
@@ -40,12 +45,11 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 .image-to-show {
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
-    border: 1px solid #81441f;
+    border: 1px solid transparent;
     border-radius: 3rem;
     box-shadow: 15px 17px 21px -5px rgba(118, 62, 17, 0.2);
     
@@ -58,10 +62,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    margin-top: 2rem;
 }
 .stop-show,
 .start-show {
-    color: white;
+    /* color: white; */
     margin-right: 1rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -70,4 +75,8 @@ body {
     background-color: #81441f;
 }
 .timer {
+    border: 1px solid #81441f;
+    border-radius: 1rem;
+    background-color: #81441f;
+    padding: 0.5rem;
 }
