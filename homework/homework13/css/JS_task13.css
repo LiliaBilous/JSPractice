@@ -6,10 +6,13 @@
   --white-color: white;
   --main-color: #16a085;
   --ligth-background: #f5f6f7;
-  --dark-background: #232323;
+  --dark-background: #2e343d;
+  --light-dark-background: #363d47;
+  --transition: all ease-in-out 0.5s;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-family: "Roboto";
@@ -18,7 +21,7 @@ html, body {
   letter-spacing: 1px;
   line-height: 1.5;
   word-spacing: 6px;
-  color: var(--black-color);
+  transition: var(--transition);
 }
 
 .main-conteiner {
@@ -27,14 +30,16 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: var(--white-color);
+  color: var(--black-color);
 }
 
-.header, .footer {
+.header,
+.footer {
   width: 100%;
   height: 4.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 0 7rem;
 }
@@ -43,13 +48,16 @@ html, body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* padding: 1rem; */
 }
-.header__menu-link {
+.menu-link {
   font-size: 18px;
-  padding: 1.5rem;
   text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.header__menu-link {
   color: var(--main-color);
+  padding: 1.5rem;
 }
 
 .button {
@@ -65,23 +73,31 @@ html, body {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  transition: var(--transition);
 }
+
 .header__theme-button {
   padding: 0.5rem;
-  border: none;  
+  border: none;
 }
+
 .theme-button {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
+  transition: var(--transition);
+  background: url(../img/moon-and-stars-svgrepo-com.svg) 0 0 / 100% no-repeat;
 }
+
 .main-content {
   background-color: var(--ligth-background);
 }
+
 .image-conteiner img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
+
 .text-conteiner {
   padding: 2rem 7rem;
   display: flex;
@@ -95,32 +111,62 @@ html, body {
   font-weight: bold;
   padding-bottom: 2rem;
 }
+
 .text-wrapper {
   text-align: center;
 }
+
 .text-wrapper p {
   padding-bottom: 2rem;
 }
+
 .text-button {
   color: var(--white-color);
   background: var(--main-color);
-  
 }
-.text-button:hover {
-  background-color: transparent;
-  color: var(--main-color);
-  transform: all 0.5s ease;
+/* -------footer styles--------- */
+.footer-contacts_menu {
 }
 
 
-.footer_contacts {
-  font-size: 18px;
-  padding: 2rem;
-  text-transform: uppercase;
-  color: var(--black-color);
-}
 .footer_contacts-line {
   color: var(--main-color);
 }
-.footer_copyright {
+/* .footer_copyright {} */
+
+/* --------hover styles-------- */
+.text-button:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+.header__menu-link:hover {
+  color: var(--black-color);
+}
+.footer_menu-link:hover {
+  color: var(--main-color);
+}
+.header__theme-button:hover {
+  color: var(--black-color);
+  
+}
+.theme-button:hover {
+  fill: var(--black-color);
+}
+/* @media(prefers-color-scheme: dark) {
+  .main-conteiner{
+    background-color: var(--dark-background);
+    color: var(--white-color);
+  }
+} */
+/* ----------dark theme styles---------- */
+.main-conteiner.dark {
+  background-color: var(--dark-background);
+  color: var(--white-color);
+}
+
+.main-conteiner.dark .main-content {
+  background-color: var(--light-dark-background);
+}
+.main-conteiner.dark .theme-button {
+  background: url(../img/sun-svgrepo-com.svg) 0 0 / 100% no-repeat;
 }
