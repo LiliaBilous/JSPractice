@@ -128,7 +128,6 @@ body {
 .footer-contacts_menu {
 }
 
-
 .footer_contacts-line {
   color: var(--main-color);
 }
@@ -145,19 +144,13 @@ body {
 .footer_menu-link:hover {
   color: var(--main-color);
 }
-.header__theme-button:hover {
-  color: var(--black-color);
-  
-}
+button:hover,
 .theme-button:hover {
-  fill: var(--black-color);
+  color: var(--black-color);
+  background: url(../img/moon-and-stars-black.svg) 0 0 / 100% no-repeat;
 }
-/* @media(prefers-color-scheme: dark) {
-  .main-conteiner{
-    background-color: var(--dark-background);
-    color: var(--white-color);
-  }
-} */
+
+
 /* ----------dark theme styles---------- */
 .main-conteiner.dark {
   background-color: var(--dark-background);
@@ -170,3 +163,17 @@ body {
 .main-conteiner.dark .theme-button {
   background: url(../img/sun-svgrepo-com.svg) 0 0 / 100% no-repeat;
 }
+.main-conteiner.dark .theme-button:hover {
+  background: url(../img//sun-black.svg) 0 0 / 100% no-repeat;
+}
+/* @media(prefers-color-scheme: dark) {
+  .main-conteiner{
+    background-color: var(--dark-background);
+    color: var(--white-color);
+  }
+  @media(prefers-color-scheme: light) {
+  .main-conteiner{
+    background-color: var(--ligth-background);
+    color: var(--black-color);
+  }
+} */
