@@ -37,14 +37,14 @@ body {
   align-items: center;
 }
 
-.header-nav a {
+.header-nav .tabs-title {
   padding: 25px 40px;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   color: #ffffff;
 }
 
-.header-nav a:hover {
+.header-nav .tabs-title:hover {
   background-color: #142b38;
   border-color: white;
 }
