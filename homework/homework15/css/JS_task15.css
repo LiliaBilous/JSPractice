@@ -148,6 +148,18 @@ body {
     height: 850px;
 }
 
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin: 10px;
+    transition: all 1s ease;
+}
+
+.post:hover {
+    transform: scale(1.02);
+}
+
 .post-title {
     height: 60px;
     font-size: 18px;
@@ -157,14 +169,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.post {
-    display: flex;
-    flex-direction: column;
-    width: 370px;
-    margin-right: 20px;
-    margin-bottom: 20px;
 }
 
 .post-1 {
@@ -283,8 +287,11 @@ body {
 .card {
     background-color: #f9f7f7;
     color: #5b6469;
+    transition: all 1s ease;
 }
-
+.card:hover {
+    transform: scale(1.02);
+}
 .big-post {
     display: grid;
     grid-template-columns: 1fr 1fr;
