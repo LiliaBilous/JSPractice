@@ -237,15 +237,21 @@ body {
 
 .blog-title {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     padding: 64px 0 52px 0;
 }
 
-.burger-icon {}
+.toggle-icon {
+    cursor: pointer;
+    border: solid #14b9d5 10px;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    transform: rotate(45deg);
+}
 
-.burger-line {}
 
 .blog-latespost {
     display: grid;
@@ -289,9 +295,11 @@ body {
     color: #5b6469;
     transition: all 1s ease;
 }
+
 .card:hover {
     transform: scale(1.02);
 }
+
 .big-post {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -348,6 +356,15 @@ body {
     grid-template-rows: 1fr;
     column-gap: 35px;
     margin-bottom: 70px;
+}
+
+.scroll-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
 }
 
 /* --------footer---------- */
