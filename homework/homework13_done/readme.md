@@ -1,4 +1,4 @@
-# Практичне завдання №12
+# Практичне завдання №13
 
 ## Theme - Working with timers, setTimeout and setInterval, localStorage, sessionStorage.
 
