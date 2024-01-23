@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #049b80;
+    width: 70vw;
+    height: 80vh;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+.input {
+}
+.user-list {
+    list-style: none;
+}
+.user-list-item {
+}
